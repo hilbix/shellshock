@@ -44,7 +44,7 @@ Following is UNTESTED, so please do not rely on it without testing:
   # Disallow QUERY_STRING arguments to start with =()
   reqdeny ^[^:\ ]*\ [^?]*\?.*=\(\)
   # Disallow headers to start with '() {'
-  reqdeny ^[^:]:\ *\(\)\ {
+  reqdeny ^[^:]:[[:space:]]*\(\)\ {
 ```
 
 
