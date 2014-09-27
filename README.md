@@ -1,5 +1,7 @@
 # Shellshock mitigation
 
+Change following recipe to your needs:
+
 ```bash
 make
 strip -a shellshock
@@ -12,6 +14,9 @@ mkdir ../shellshock
 mv -i * ../shellshock/
 for a in ../shellshock/*; do ln .shellshock "${a##*/}"; done
 ```
+
+If you do not know what above means, get help, **now**!  In this case you do not have enough knowlege, which is needed to be able to see if you are vulnerable or not.  So better ask somebody, who groks this.
+
 
 ## What it does
 
