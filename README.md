@@ -3,7 +3,7 @@
 Change following recipe to your needs:
 
 ```bash
-git clone https://github.com/hilbix/shellshock.gif
+git clone https://github.com/hilbix/shellshock.git
 cd shellshock
 
 make
