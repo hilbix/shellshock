@@ -47,6 +47,8 @@ Following is UNTESTED, so please do not rely on it without testing:
   reqdeny ^[^:]:[[:space:]]*\(\)\ {
 ```
 
+But please note that this `haproxy` rules are not perfect, you can probably work around them.
+
 
 ## CLL?
 
