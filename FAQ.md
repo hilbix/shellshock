@@ -32,6 +32,22 @@ And it should be no problem, as the error is sent as `403` `text/plain`, so no b
 - I am not related to this discovery, just another victim, as nearly everybody on this planet who uses `bash`.
 - I do not even claim, that my `shellshock` tool catches all possible variants of Shellshock, but it is enough for me to be able to sleep again without worries again.  ;)
 
+## Do you know other ways to block Shellshock?
+
+Probably you can do this with `haproxy`.  Also please do not forget `HTTPS`!
+
+Following is UNTESTED, so please do not rely on it without testing:
+
+```text
+  # Disallow QUERY_STRING to start with ()
+  reqdeny ^[^:\ ]*\ [^?]*\?\(\)
+  # Disallow QUERY_STRING arguments to start with =()
+  reqdeny ^[^:\ ]*\ [^?]*\?.*=\(\)
+  # Disallow headers to start with '() {'
+  reqdeny ^[^:]:\ *\(\)\ {
+```
+
+
 ## CLL?
 
 THis is just my variant of Public Domain.  You can do with it whatever you want, except one small exception:
