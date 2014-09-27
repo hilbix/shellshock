@@ -25,7 +25,7 @@ This is for diagnostic purpose in case things go wrong.  If some user sees this 
 
 And it should be no problem, as the error is sent as `403` `text/plain`, so no bad things like XSS should happen - except you have a broken browser.
 
-Also cloning and changing this is easy. The source you can use.
+Also cloning and changing this is easy. The source use you can.
 
 
 ## Can you give me more information about Shellshock?
