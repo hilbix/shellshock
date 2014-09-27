@@ -18,6 +18,8 @@ mv -i * ../shellshock/
 for a in ../shellshock/*; do ln .shellshock "${a##*/}"; done
 ```
 
+Do this with all your `cgi-bin` directories.  Look into your config if there are some directories which execute shell scripts without beeing named `cgi-bin`.  Be sure to replace the scripts with `shellshock`-wrapper, too (and that the new `shellshock`-directory is not reachable from web server, of course).
+
 If you do not know what above means, get help, **now**!  In this case you do not have enough knowlege, which is needed to be able to see if you are vulnerable or not.  So better ask somebody, who groks this.
 
 Please note that I cannot help you, sorry.
