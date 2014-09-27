@@ -24,3 +24,10 @@ BUG TEST=() {
 This is for diagnostic purpose in case things go wrong.  If some user sees this you can get a clue what happened.
 
 And it should be no problem, as the error is sent as `403` `text/plain`, so no bad things like XSS should happen - except you have a broken browser.
+
+
+## CLL?
+
+THis is just my variant of Public Domain.  You can do with it whatever you want, except one small exception:
+
+If you ever add a Copyright to it, you will harm your trustworthiness.
