@@ -7,7 +7,7 @@ git clone https://github.com/hilbix/shellshock.git
 cd shellshock
 
 make
-strip -a shellshock
+strip -s shellshock
 cp shellshock /srv/www/cgi-bin/.shellshock
 
 cd /srv/www/cgi-bin
