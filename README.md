@@ -3,6 +3,9 @@
 Change following recipe to your needs:
 
 ```bash
+git clone https://github.com/hilbix/shellshock.gif
+cd shellshock
+
 make
 strip -a shellshock
 cp shellshock /srv/www/cgi-bin/.shellshock
