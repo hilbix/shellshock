@@ -30,7 +30,7 @@ Please note that I cannot help you, sorry.
 - It is a simple wrapper which looks after it's name in `../shellshock/` and executes the script there.
 - It looks into the ENV for variables which start with the famous string `() {` and prevents running the script if something like this is there.
 - Move your script to directory `../shellshock/` such that it is outside your webserver tree.  Then hardlink `.shellshock` executable to the script name.  Use hardlinks, as not all webservers follow softlinks, such that the webserver executes `.shellshock` under the script's name instead of your script.
-- To test it try `curl -D- -A '() {' http://your.web.example.com/cgi-bin/.shellshock`.  If properly invoked you see something like
+- To test it try `curl -D- -A '() {' http://your.web.example.com/cgi-bin/.shellshock; echo`.  If properly invoked you see something like
 ```text
 HTTP/1.1 403 shellshock rejected
 Date: Sat, 27 Sep 2014 09:53:29 GMT
@@ -38,6 +38,7 @@ Server: Apache
 Transfer-Encoding: chunked
 Content-Type: text/plain
 
+BUG HTTP_USER_AGENT=() {
 ```
 
 - You can leave in this wrapper even after your `bash` was updated.  Why not ;)
