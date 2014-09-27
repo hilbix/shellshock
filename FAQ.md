@@ -26,6 +26,12 @@ This is for diagnostic purpose in case things go wrong.  If some user sees this 
 And it should be no problem, as the error is sent as `403` `text/plain`, so no bad things like XSS should happen - except you have a broken browser.
 
 
+## Can you give me more information about Shellshock?
+
+- [Please have a look into the CVE](https://www.us-cert.gov/ncas/alerts/TA14-268A) yourself.
+- I am not related to this discovery, just another victim, as nearly everybody on this planet who uses `bash`.
+- I do not even claim, that my `shellshock` tool catches all possible variants of Shellshock, but it is enough for me to be able to sleep again without worries again.  ;)
+
 ## CLL?
 
 THis is just my variant of Public Domain.  You can do with it whatever you want, except one small exception:
