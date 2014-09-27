@@ -40,6 +40,9 @@ Content-Type: text/plain
 
 ```
 
+- You can leave in this wrapper even after your `bash` was updated.  Why not ;)
+
+
 ## Warning
 
 - This is no full solution.  If your script extracts data from `QUERY_STING` and uses them, there might be problems with sub-shells. However it helps if you want to run shell scripts CGI under vulnerable bash for systems, until you can fully patch them.
