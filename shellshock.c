@@ -46,9 +46,7 @@ main(int argc, char **argv)
     {
       if (!stat(buf, &st))
         {
-	  int err;
-
-          err = execv(buf, argv);
+          execv(buf, argv);
           sprintf(buf, "exec failed: %d", errno);
           bug = buf;
         }
